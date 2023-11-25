@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option go_package = "";
+
+package auth;
+
+service Greeter {
+  rpc Auth(AuthRequest) returns (AuthReply) {}
+  rpc Reg(RegRequest) returns (RegReply) {}
+}
+
+message AuthRequest {
+  string name = 1;
+}
+
+message AuthReply {
+  string message = 1;
+}
+
+message RegRequest {
+  string name = 1;
+}
+
+message RegReply {
+  string message = 1;
+}

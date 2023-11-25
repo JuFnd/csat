@@ -1,0 +1,3 @@
+{"time":"2023-11-25T14:22:16.362698107+03:00","level":"ERROR","msg":"sql ping error","err":"unexpected message type"}
+{"time":"2023-11-25T14:22:16.362792455+03:00","level":"ERROR","msg":"cant create repo"}
+{"time":"2023-11-25T14:22:16.362818271+03:00","level":"ERROR","msg":"cant create core"}
