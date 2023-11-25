@@ -1,0 +1,34 @@
+<div class='film-selection'>
+  <div class='film-selection_name'>
+    {{collection_name}}
+  </div>
+  <ul class='film-selection_films'>
+    {{#if haveFilms}}
+      {{#each films}}
+        <li class='film-selection_film' data-section='{{id}}'>
+          <div
+            class='film-selection_film-poster'
+            style='background-image: url("{{poster}}")'
+          >
+            <div class='film-selection_film_header'>
+              <img class='image-watchlist' src='/icons/bookmark.png' />
+              <div class='film-rating'>
+                {{#if rating}}
+                  {{rating}}
+                {{else}}
+                  8
+                {{/if}}
+              </div>
+            </div>
+          </div>
+          <div class='film-selection_film-information'>
+            <div class='film-selection_film_name'>{{title}}</div>
+          </div>
+        </li>
+
+      {{/each}}
+    {{else}}
+      <div><p>К сожалению, но таких фильмов нет.</p></div>
+    {{/if}}
+  </ul>
+</div>

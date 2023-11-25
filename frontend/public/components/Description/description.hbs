@@ -1,0 +1,53 @@
+<div class="film-page">
+    <div class="film-page__theme">
+        <div class="film-page__theme__content-block">
+            <div class="column">
+                <div class="film-name">{{title}}</div>
+                <div class="content-card">
+                    <ul class="param-list">{{date}} {{mpaa}}</ul>
+                    <ul class="param-list">{{country}}
+                    {{#each body.genre}}
+                      {{title}}
+                    {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="player">
+                <div class="video-content">
+                    <div  class="video-content-image" style='background-image: url("{{poster}}")'> </div>
+                </div>
+                <div class="video-buttons">
+                    <div class="trailer">
+                        <img class="trailer-player-image" src="/icons/play-button.svg">
+                        Трейлер
+                    </div>
+                    <div class="cinema">Смотреть</div>
+                </div>
+            </div>
+            <div class="film-info">{{infoText}}</div>
+            <div class="rating">
+                <div class="left">
+                    <div class="number">{{mark}}</div>
+                    <div class="count">{{mark_number}} оценок</div>
+                </div>
+                <div class="right">
+                    <div class="review-button">Оставить отзыв</div>
+                </div>
+            </div>
+            <div class="actors">
+                <div class="actors-header">Актёры</div>
+                <div class="actors-list">
+                {{#each actors}}
+                    <div class="actor table__actor__text" data-section='{{actor_id}}'>
+                        <img class="actor-poster" style='background-image: url("{{actor_photo}}")'>
+                        <div class="actor-name">{{actor_name}}</div>
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="film-page__comments">
+        <div class="film-page__comments__header">Отзывы</div>
+    </div>
+</div>
