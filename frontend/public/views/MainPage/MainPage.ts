@@ -43,8 +43,13 @@ export class MainPage extends View {
       filmSelectionPage.render(false).then((response) => {
         contentBlockHTML.insertAdjacentHTML('beforeend', <string>response);
         this.componentDidMount();
+        contentBlockHTML?.insertAdjacentHTML('beforeend', '<iframe class="csat" src="https://csat.movie-hub.ru/"></iframe>');
       });
     }
+  }
+
+  addedCsat() {
+
   }
 
   componentDidMount () {

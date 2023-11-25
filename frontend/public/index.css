@@ -25,6 +25,7 @@
 @import './components/FavoriteList/favoriteList.css';
 @import './components/Modal/modal.css';
 @import './router/Page404/page404.css';
+@import './components/csat/csat.css';
 @import './components/DirectoryFilms/directoryFilms.css';
 
 
